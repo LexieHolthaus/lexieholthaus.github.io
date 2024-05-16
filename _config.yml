@@ -4,7 +4,7 @@ permalink:           pretty
 # Setup
 title:               Lexie Holthaus
 # tagline:             Software Developer from Chicago.
-# url:                 https://jamigibbs.com
+url:                 https://lexieholthaus.github.io
 paginate:            1
 baseurl:             ""
 
@@ -28,7 +28,7 @@ github:
   # repo:              https://github.com/jamigibbs/portfolio
 # google_analytics:    UA-3363703-15
 # twitter:             jamigibbs
-github:              jamigibbs
+github:              lexieholthaus
 # dribbble:            jamigibbs
 
 # Gems
