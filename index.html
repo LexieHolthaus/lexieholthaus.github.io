@@ -3,33 +3,34 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<section id="about">
+  <h2>About Me</h2>
+  <p>I’m Alexandria “Lexie” Holthaus, a physicist, community advocate, and now a candidate for Congress. I believe in science-based policy, economic justice, and bold climate action.</p>
+</section>
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+<section id="platform">
+  <h2>Platform</h2>
+  <ul>
+    <li><strong>Healthcare for All</strong> – Affordable access for every American</li>
+    <li><strong>Climate Action</strong> – Clean energy, environmental justice</li>
+    <li><strong>Housing</strong> – Affordable, accessible, dignified housing as a right</li>
+    <li><strong>Education</strong> – Public investment in K–12 and higher ed</li>
+  </ul>
+</section>
 
-    {{ post.content }}
-  </article>
-  {% endfor %}
-</div>
+<section id="volunteer">
+  <h2>Volunteer</h2>
+  <p><a href="https://forms.gle/your-form-link">Sign up here</a> to join the campaign!</p>
+</section>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+<section id="donate">
+  <h2>Donate</h2>
+  <p>Support our grassroots movement — donation platform coming soon!</p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email me at <a href="mailto:alexandriaholthaus@gmail.com">alexandriaholthaus@gmail.com</a></p>
+</section>
 
 
