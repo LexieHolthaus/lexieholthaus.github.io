@@ -1,79 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+  {% include head.html %}
 
-{% include head.html %}
+  <body>
 
-<body>
-
-  <div class="row">
-    <div class="large-12 large-centered columns">
-
-      <header class="masthead">
-        <img src="{{ site.baseurl }}/public/profile.jpg" alt="Alexandria Holthaus">
-      </header>
-
-    </div>
-  </div>
-
-  <div class="row">
-
-    <div class="large-6 large-offset-3 columns">
-
-      <div class="content-section">
-
-        <p>
-          Hello! I’m Alexandria Holthaus, M.Sc. Physics. </p>
-          <p>I'm an astrophysics researcher with strong skills in Python. I routinely sift through large experimental data sets and translate them into visual narratives. Also, I have written and adapted theoretical Monte Carlo simulations of stellar evolution. I thrive in collaborative, multidisciplinary research environments and I hope to join your team.</p>
-
-        <p><a href ="\assets\CV-Holthaus.pdf">Click here for my CV</a></p>
-          <!-- Hello! I’m Alexandria Holthaus M.Sc. Physics. My academic journey has been advanced data analysis, visualization, and computational simulations. Proficient in Python, I've conducted in-depth research using Monte Carlo simulations and Modules for Experiments in Stellar Astrophysics (MESA), enhancing our understanding of stellar phenomena. My work transforms vast datasets into compelling visual narratives, revealing patterns and anomalies in stellar behavior, all while thriving in collaborative, multidisciplinary research environments. <a href ="\assets\CV-Holthaus.pdf">Click here for my CV</a></p> -->
-        </p>
-
+    <header class="masthead">
+      <div class="row">
+        <div class="large-12 columns text-center">
+          <img src="{{ site.baseurl }}/public/profile.jpg" alt="Alexandria Holthaus" class="profile-pic">
+          <h1>Holthaus for House</h1>
+          <p class="tagline">Putting People First</p>
+          <nav>
+            <ul class="nav">
+              <li><a href="{{ site.baseurl }}/#about">About</a></li>
+              <li><a href="{{ site.baseurl }}/#platform">Platform</a></li>
+              <li><a href="{{ site.baseurl }}/#volunteer">Volunteer</a></li>
+              <li><a href="{{ site.baseurl }}/#donate">Donate</a></li>
+              <li><a href="{{ site.baseurl }}/#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
+    </header>
 
+    <main class="content">
+      {{ content }}
+    </main>
 
-    </div>
-
-    <div class="large-2 large-offset-1 columns social">
-      <ul>
-        <!-- <li> -->
-          <!-- <a href="https://github.com/LexieHolthaus"> -->
-          <!-- <a href="https://github.com/{{ site.github }}"> -->
-            <!-- <i class="fab fa-github"></i> -->
-          <!-- </a> -->
-        <!-- </li> -->
-        <li>
-          <a href="https://www.linkedin.com/in/alexandria-holthaus/">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:alexandriaholthaus@gmail.com">
-            <i class="fa fa-envelope"></i>
-          </a>
-        </li>
-        <!-- <li> -->
-          <!-- <a href="https://dribbble.com/{{ site.dribbble }}"> -->
-            <!-- <i class="fab fa-dribbble"></i> -->
-          <!-- </a> -->
-        <!-- </li> --> 
+    <footer class="text-center">
+      <p>Paid for by Holthaus for House. © {{ site.time | date: "%Y" }}</p>
+      <ul class="social-icons">
+        <li><a href="mailto:alexandriaholthaus@gmail.com"><i class="fa fa-envelope"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/alexandria-holthaus/"><i class="fab fa-linkedin"></i></a></li>
       </ul>
-    </div>
+    </footer>
 
-  </div>
-
-  <!-- {% if site.google_analytics %}
-  <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-    ga('create', '{{ site.google_analytics }}', 'auto');
-    ga('send', 'pageview');
-  </script> {% endif %} -->
-
-</body>
-
+  </body>
 </html>
